@@ -1,0 +1,34 @@
+/* Intentional layouts per breakpoint — not just shrunken desktop. */
+@media (max-width:1100px){
+  .grid.three{grid-template-columns:repeat(2,1fr)}
+  .cols-4{grid-template-columns:repeat(2,1fr)}
+  .col{border-bottom:1px solid var(--line)}
+  .col:nth-child(2n){border-right:0}
+  .col:nth-child(odd){padding-left:0}
+  .col:nth-child(even){padding-left:28px}
+  .skills{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:block}
+  .split,.contact-grid,.case-body{grid-template-columns:1fr}
+  .svc{grid-template-columns:56px 1fr}
+  .svc>div:last-child{grid-column:1 / -1}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-grid>div:first-child{grid-column:1 / -1}
+  .portrait{max-width:420px}
+}
+@media (max-width:680px){
+  :root{--nav-h:68px}
+  .grid,.grid.three,.row,.skills{grid-template-columns:1fr}
+  .cols-4{grid-template-columns:1fr}
+  .col,.col:nth-child(even),.col:nth-child(odd){padding:26px 0;border-right:0}
+  .hero{align-items:flex-start;padding-top:calc(var(--nav-h) + 56px)}
+  .scroll-ind{display:none}
+  .hero-actions .btn,.cta-block .btn{width:100%}
+  .sec-head{align-items:flex-start}
+  .principles li{grid-template-columns:1fr}
+  .pager a{padding:26px 0}
+  .contact-list li{flex-direction:column;gap:4px}
+}
+@media (min-width:1700px){:root{--max:1440px}}

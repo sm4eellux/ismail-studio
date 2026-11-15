@@ -1,0 +1,33 @@
+/* background-circles.css — pure-CSS port of the BackgroundCircles component (violet "secondary" variant).
+   Markup: <div class="bgc" aria-hidden="true"> … </div> as a child of the section it decorates. */
+.bgc{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;
+  -webkit-mask-image:linear-gradient(#000 62%,transparent);mask-image:linear-gradient(#000 62%,transparent)}
+/* slow-drifting grid, faded out toward the centre */
+.bgc-grid{position:absolute;inset:0;overflow:hidden;
+  -webkit-mask-image:radial-gradient(ellipse at center,transparent 30%,#000);mask-image:radial-gradient(ellipse at center,transparent 30%,#000)}
+.bgc-grid::before{content:"";position:absolute;inset:0 -20%;opacity:.2;transform:skewX(-10deg);
+  background-image:repeating-linear-gradient(90deg,#64748B 0,#64748B 1px,transparent 1px,transparent 56px);
+  animation:bgcGrid 40s linear infinite}
+@keyframes bgcGrid{to{background-position:560px 0}}
+/* three breathing, rotating rings */
+.bgc-rings{position:absolute;top:56%;left:74%;width:clamp(240px,30vw,400px);aspect-ratio:1;transform:translate(-50%,-50%)}
+.bgc-ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--c);
+  background:linear-gradient(to bottom right,rgba(139,92,246,.3),transparent);
+  animation:bgcRing 5s ease-in-out infinite}
+.bgc-ring::after{content:"";position:absolute;inset:0;border-radius:50%;mix-blend-mode:screen;
+  background:radial-gradient(ellipse at center,rgba(139,92,246,.1),transparent 70%)}
+.bgc-ring:nth-child(1){--c:rgba(139,92,246,.6);--s:1.05}
+.bgc-ring:nth-child(2){--c:rgba(232,121,249,.5);--s:1.1}
+.bgc-ring:nth-child(3){--c:rgba(71,85,105,.3);--s:1.15}
+@keyframes bgcRing{
+  0%,100%{transform:rotate(0) scale(1);opacity:.8}
+  50%{transform:rotate(180deg) scale(var(--s));opacity:1}
+  100%{transform:rotate(360deg) scale(1)}}
+/* soft glows */
+.bgc-glow{position:absolute;inset:0;
+  -webkit-mask-image:radial-gradient(90% 60% at 50% 50%,#000 40%,transparent);mask-image:radial-gradient(90% 60% at 50% 50%,#000 40%,transparent)}
+.bgc-glow::before,.bgc-glow::after{content:"";position:absolute;inset:0}
+.bgc-glow::before{background:radial-gradient(ellipse at 74% 55%,rgba(139,92,246,.3),transparent 70%);filter:blur(60px)}
+.bgc-glow::after{background:radial-gradient(ellipse at 74% 55%,rgba(167,139,250,.15),transparent);filter:blur(40px)}
+@media (max-width:800px){.bgc-rings{left:50%}.bgc-glow::before,.bgc-glow::after{background-position:center}}
+@media (prefers-reduced-motion:reduce){.bgc-grid::before,.bgc-ring{animation:none}}

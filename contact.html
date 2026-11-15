@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Start a Project | ISMAIL.STUDIO</title>
+<meta name="description" content="Contact Ismail, freelance web developer, to discuss your website project. Send a message, email or WhatsApp.">
+<meta name="theme-color" content="#08080B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ISMAIL.STUDIO">
+<meta property="og:title" content="Contact — Start a Project | ISMAIL.STUDIO">
+<meta property="og:description" content="Contact Ismail, freelance web developer, to discuss your website project. Send a message, email or WhatsApp.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/liquid-nav.css">
+<link rel="stylesheet" href="css/animated-gradient.css">
+<link rel="stylesheet" href="css/background-circles.css">
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="ISMAIL.STUDIO home">ISMAIL<span>.</span>STUDIO</a>
+    <nav class="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="work.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a><a href="process.html">Process</a><a href="contact.html" aria-current="page">Contact</a></nav>
+    <a class="btn btn-primary nav-cta" href="contact.html">Let’s Talk</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+<nav class="menu" id="mobile-menu" aria-label="Mobile"><a href="index.html">Home</a><a href="work.html">Work</a><a href="services.html">Services</a><a href="about.html">About</a><a href="process.html">Process</a><a href="contact.html" aria-current="page">Contact</a><a class="btn btn-primary" style="margin-top:22px;font-size:1rem;color:#fff;width:fit-content" href="contact.html">Let’s Talk</a></nav>
+<main id="main">
+<header class="page-hero" data-animated-gradient data-breathing="true" data-starting-gap="75" data-class="ag-fade-bottom" data-colors="rgba(8,8,11,0),rgba(30,20,80,.28),rgba(76,47,168,.45),rgba(139,92,246,.55)" data-stops="30,55,78,100"><div class="bgc" aria-hidden="true"><div class="bgc-grid"></div><div class="bgc-rings"><div class="bgc-ring"></div><div class="bgc-ring"></div><div class="bgc-ring"></div></div><div class="bgc-glow"></div></div><div class="wrap"><p class="kicker" data-hero>Contact</p><h1 data-hero>Let’s Build Something Exceptional.</h1><div data-hero><span class="status"><span class="dot" aria-hidden="true"></span><span data-status>Available for new projects</span></span></div></div></header>
+<section class="section" style="padding-top:0;border-top:0"><div class="wrap contact-grid">
+<div data-reveal><p class="lead" style="margin-bottom:32px">Tell me about your project. I read every message and reply by email.</p>
+<ul class="contact-list">
+<li><span>Email</span><a data-contact="email" data-contact-text href="mailto:ismailtesh999@gmail.com">ismailtesh999@gmail.com</a></li>
+<li><span>WhatsApp</span><a data-contact="whatsapp" data-contact-text href="https://wa.me/212600000000">Message on WhatsApp</a></li>
+<li><span>LinkedIn</span><a data-contact="linkedin" href="www.linkedin.com/in/ismail-bk-a42a1544b">View profile ↗</a></li>
+<li><span>GitHub</span><a data-contact="github" href="https://github.com/sm4eellux">View profile ↗</a></li></ul></div>
+<form class="glass" id="contact-form" novalidate data-reveal>
+<div class="alert warn" id="alert-warn" role="status"></div><div class="alert ok" id="alert-ok" role="status"></div><div class="alert bad" id="alert-bad" role="alert"></div>
+<div class="row"><div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err-msg" role="alert"></p></div>
+<div class="field"><label for="f-email">Email address</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="err-msg" role="alert"></p></div></div>
+<div class="row"><div class="field"><label for="f-subject">Subject</label><input id="f-subject" name="subject" type="text" required><p class="err-msg" role="alert"></p></div>
+<div class="field"><label for="f-type">Project type</label><select id="f-type" name="type" required><option value="">Select a type</option><option>Business website</option><option>Landing page</option><option>Personal portfolio</option><option>E-commerce interface</option><option>Website redesign</option><option>Other</option></select><p class="err-msg" role="alert"></p></div></div>
+<div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" required></textarea><p class="err-msg" role="alert"></p></div>
+<div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+<button class="btn btn-primary" type="submit">Send message</button></form></div></section></main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="index.html">ISMAIL<span>.</span>STUDIO</a><p>Freelance web developer and designer building modern, high-performance websites.</p></div>
+      <div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="work.html">Work</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="process.html">Process</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul>
+        <li><a data-contact="email" data-contact-text href="mailto:ismailtesh999@gmail.com">ismailtesh999@gmail.com</a></li>
+        <li><a data-contact="whatsapp" href="https://wa.me/212600000000">WhatsApp</a></li>
+        <li><a data-contact="linkedin" href="www.linkedin.com/in/ismail-bk-a42a1544b">LinkedIn</a></li>
+        <li><a data-contact="github" href="https://github.com/sm4eellux">GitHub</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© <span data-year>2026</span> ISMAIL.STUDIO. All rights reserved.</span><span>Designed and built by Ismail</span></div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/liquid-nav.js" defer></script>
+<script src="js/animated-gradient.js" defer></script>
+<script src="js/projects.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/three-background.js" defer></script>
+</body>
+</html>

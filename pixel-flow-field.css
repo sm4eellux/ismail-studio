@@ -1,0 +1,8 @@
+/* pixel-flow-field.css — styles for js/pixel-flow-field.js */
+.pff-host{position:relative;isolation:isolate;overflow:hidden}
+.pff-layer{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.pff-layer canvas{display:block;width:100%;height:100%}
+.pff-layer.pff-fallback{opacity:.4}
+/* home hero: the headline is drawn by the pixel field; the real <h1> stays in the DOM for screen readers/SEO */
+.hero-pff{width:100%;height:clamp(340px,38vw,480px);margin-block:26px 30px}
+.hero-pff h1{position:absolute;width:1px;height:1px;margin:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}

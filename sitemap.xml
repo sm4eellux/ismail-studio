@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace YOUR-USERNAME.github.io/ismail-studio with your real address (or custom domain) before deploying. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-USERNAME.github.io/ismail-studio/</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/ismail-studio/work.html</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/ismail-studio/services.html</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/ismail-studio/about.html</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/ismail-studio/process.html</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/ismail-studio/contact.html</loc></url>
+</urlset>
